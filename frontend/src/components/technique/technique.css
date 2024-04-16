@@ -1,0 +1,48 @@
+.bouttonWorklist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1rem;
+}
+.bouttonOeuvreList {
+  color: black;
+  font-weight: 800;
+  padding: 0.3rem;
+  border: solid 0.1rem #87255b;
+  border-radius: 0.5rem;
+  background-color: #d9d9d9;
+  font-size: 0.8rem;
+  font-family: "Lobster", Helvetica, sans-serif;
+}
+.bouttonOeuvreList:hover {
+  background-color: #eac2c2;
+}
+.boutton_toutafficher {
+  font-family: "Lobster";
+  font-size: 0.7rem;
+  font-weight: 400;
+  padding: 0.1rem;
+  border-radius: 0.3rem;
+  border: 1px solid;
+  box-shadow:
+    1px 1px,
+    0px 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #d1c8e1;
+}
+/* RESPONSIVE */
+@media screen and (min-width: 1024px) {
+  .bouttonOeuvreList {
+    font-size: 2rem;
+    width: 12rem;
+  }
+  .boutton_toutafficher {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .gridcontainer {
+    margin-left: 10%;
+  }
+}

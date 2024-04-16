@@ -1,0 +1,25 @@
+.bouton_voir {
+  justify-content: center;
+  font-family: "Lobster";
+  display: inline-flex;
+  margin-left: 60%;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  border: 1px solid;
+  box-shadow:
+    6px 6px,
+    0px 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+@media screen and (min-width: 1024px) {
+  .bouton_voir {
+    margin-left: 85%;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}

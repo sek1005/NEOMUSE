@@ -1,0 +1,102 @@
+.body_artistlist {
+  padding: 2rem;
+}
+.container_search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  background-color: #ffffff;
+  border: solid 4px #b370b0;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Playfair display";
+  font-weight: bold;
+  border-radius: 50px;
+  margin-top: 2rem;
+  padding-left: 8rem;
+  margin-bottom: 2rem;
+}
+.input_search {
+  width: 100%;
+  height: 90%;
+  background-color: #ffffff;
+  border-style: none;
+  color: black;
+  font-size: 1rem;
+  border-radius: 50px;
+  outline: none;
+}
+#icon_search {
+  margin-right: 5px;
+}
+.input_search:hover {
+  border: none;
+  outline: none;
+}
+
+.header_artistlist {
+  display: flex;
+  justify-content: space-between;
+}
+.h1_artistes {
+  font-weight: bold;
+  border: 2px solid;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+}
+.portraits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.portrait_artist {
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 60fr);
+  grid-template-rows: repeat(2, 60fr);
+  gap: 1.5rem;
+  margin: auto;
+  overflow: hidden;
+  width: 80%;
+}
+.name_artist {
+  text-align: center;
+  font-weight: 500;
+  font-family: "Playfair Display";
+  font-size: 20px;
+}
+.image_artist {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 426px) {
+  .header_artistlist {
+    display: flex;
+    flex-direction: column;
+  }
+  .container_search {
+    margin-top: 2rem;
+  }
+  .h1_artistes {
+    font-size: 1.6rem;
+  }
+  .portrait_artist {
+    grid-template-columns: repeat(1, 30fr);
+    grid-template-rows: repeat(1, 30fr);
+    gap: 6em;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .name_artist {
+    font-size: 25px;
+  }
+  .title_artislist {
+    text-align: center;
+  }
+}

@@ -1,0 +1,65 @@
+.box_titleHome {
+  display: flex;
+  justify-content: center;
+}
+.bouton_voir {
+  justify-content: center;
+  font-family: "Lobster";
+  display: inline-flex;
+  margin-right: 8%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  border: 1px solid;
+  box-shadow:
+    4px 4px,
+    0px 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #d1c8e1;
+}
+.home-title-2,
+.home-title-1 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-left: 2rem;
+  margin-top: 2rem;
+  text-decoration: underline;
+}
+.slide_artist {
+  display: flex;
+  justify-content: space-between;
+}
+.slide_oeuvre {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1024px) {
+  .bouton_voir {
+    width: 30%;
+    margin-left: 34%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-right: 4%;
+  }
+  .home-title-2,
+  .home-title-1 {
+    font-weight: bold;
+    font-size: 2rem;
+    width: 90%;
+  }
+  .home-title-1 {
+    margin-top: 2rem;
+  }
+  .slide_artist {
+    margin: 2rem;
+  }
+  .slide_oeuvre {
+    margin: 2rem;
+  }
+}

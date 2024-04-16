@@ -1,0 +1,27 @@
+.container_modif_user {
+  background-color: #f6f3ec;
+  font-size: 0.8rem;
+  margin: 4rem;
+}
+.titre_user {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #87255b;
+  margin: 2rem;
+}
+.bout_user {
+  background-color: #87255b;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  color: white;
+  border-radius: 0.8rem;
+  margin-top: 2rem;
+  width: 15rem;
+  font-size: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  &:hover {
+    background-color: #350620;
+  }
+}

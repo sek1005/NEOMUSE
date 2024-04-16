@@ -1,0 +1,118 @@
+.container_inscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.monlogin {
+  background-color: white;
+  font-size: 0.8rem;
+  padding: 1rem;
+  width: 90%;
+  margin: 20px 20px;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 0px 0.1rem;
+}
+.container_signup {
+  background-color: #f6f3ec;
+  font-size: 0.8rem;
+  padding: 1rem;
+  margin: -1rem;
+}
+.titre_login {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #87255b;
+}
+.titre_email {
+  padding-top: 0.4rem;
+  padding-bottom: 0.1;
+  text-align: left;
+  font-weight: bold;
+  margin: 0.4rem;
+}
+.input_login {
+  border-radius: 0.37rem;
+  height: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+  outline: none;
+  border: 1px solid #746e73;
+  &:focus {
+    box-shadow: 0 0 0 2px #b370b0;
+  }
+}
+
+.imput {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.text_visible {
+  margin-left: -2rem;
+  margin-top: 0.6rem;
+  color: #848484;
+  cursor: pointer;
+}
+.box_connexion {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bout_login {
+  background-color: #87255b;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  color: white;
+  border-radius: 0.8rem;
+  margin-top: 2rem;
+  width: 10rem;
+  font-size: 1rem;
+  cursor: pointer;
+  &:hover {
+    background-color: #350620;
+  }
+}
+.bout_signup {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  border-radius: 0.8rem;
+  transition: color 0.3s;
+  font-size: 1rem;
+  width: 10rem;
+  cursor: pointer;
+  &:hover {
+    color: white;
+    background-color: #87255b;
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.7rem;
+  text-align: left;
+}
+.titre_champ {
+  padding-top: 1rem;
+  padding-bottom: 0.4rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 1024px) {
+  .container_inscription {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 4rem;
+  }
+  .text_visible {
+    right: 19rem;
+  }
+}

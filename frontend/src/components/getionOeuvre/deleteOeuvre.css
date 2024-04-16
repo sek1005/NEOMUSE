@@ -1,0 +1,60 @@
+.delete_oeuvre {
+  padding-top: 2rem;
+  text-align: center;
+  margin: 50px;
+  font-size: 0.5rem;
+}
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  background-color: rgb(244, 225, 240);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.button_delete {
+  padding: 8px;
+  margin-bottom: 5px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 5rem;
+  cursor: pointer;
+  &:hover {
+    border: solid 1px black;
+  }
+}
+.button_confirm {
+  padding: 8px;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 5px;
+  background-color: #d372a2;
+  color: rgb(15, 13, 13);
+  border: none;
+  cursor: pointer;
+  &:hover {
+    border: solid 1px black;
+  }
+}
+
+.button_delete :hover {
+  background-color: #a05f45;
+}

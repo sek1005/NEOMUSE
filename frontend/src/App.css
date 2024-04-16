@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@500&family=Playfair+Display:wght@500&display=swap");
+
+/* HTML5 display-role reset for older browsers */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+header,
+hgroup,
+menu,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f3ec;
+  font-family: "Playfair Display", Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+.app-overall {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-outlet {
+  padding-top: 2.6rem;
+  padding-bottom: 2rem;
+  flex-grow: 1;
+}
+@media screen and (min-width: 1024px) {
+  .app-outlet {
+    padding-top: 3.9rem;
+    padding-bottom: 2rem;
+    flex-grow: 1;
+  }
+}

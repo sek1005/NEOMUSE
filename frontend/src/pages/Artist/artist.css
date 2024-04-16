@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@media screen and (max-width: 428px) {
+  body {
+    background-color: #f6f3ec;
+    font-family: "Playfair Display", Helvetica, sans-serif;
+  }
+  .art-imgtop-desk {
+    width: 100%;
+    height: auto;
+  }
+  .art-imgtop {
+    display: none;
+  }
+
+  .bio-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .art-biography {
+    border-radius: 0.3rem;
+    text-align: justify;
+    padding: 1rem;
+    margin: 2rem;
+  }
+  .art-title {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+  }
+  .art-thumb-desk {
+    display: none;
+  }
+  .art-name {
+    margin-left: 0.5rem;
+    font-weight: bold;
+  }
+  .art-display {
+    width: 30%;
+  }
+
+  .content {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .header {
+    font-size: 42px;
+  }
+  .art-bio-seemore {
+    margin-top: 0.2rem;
+    border: 0.1rem solid;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+  }
+}
+.art-title {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 900;
+  line-height: 0.9rem;
+  letter-spacing: 0.05rem;
+  text-decoration: underline;
+}
+@media screen and (min-width: 1024px) {
+  .art-imgtop {
+    background-image: url(../../assets/girl.jpg);
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: 50% 20%;
+  }
+  .art-imgtop-desk {
+    display: none;
+  }
+  .art-name {
+    text-align: center;
+    margin-top: 2rem;
+    margin-right: 10rem;
+    font-size: xx-large;
+  }
+
+  .art-biography {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 2rem;
+    text-align: justify;
+    padding: 2rem;
+    margin: 2rem;
+    width: 100%;
+  }
+  .art-title {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+  }
+
+  .art-thumb-desk {
+    margin-right: 1rem;
+    border-radius: 0.3rem;
+    width: 30%;
+  }
+  .art-bio-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .art-display {
+    width: 50%;
+  }
+  .art-bio-seemore {
+    margin-top: 0.2rem;
+    border: 0.1rem solid;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+  }
+  .art-title {
+    margin: 2rem;
+    text-align: center;
+    font-weight: 900;
+    line-height: 0.9rem;
+    letter-spacing: 0.05rem;
+    text-decoration: underline;
+    font-size: 1.3rem;
+  }
+}

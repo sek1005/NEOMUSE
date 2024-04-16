@@ -1,0 +1,209 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    #d1c8e1;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.navbar-brand {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 16rem;
+}
+
+.logouser {
+  align-items: center;
+  width: 1.5rem;
+}
+
+.div-nav-burger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.div-nav-not-burger {
+  display: none;
+}
+
+.div-nav-user p {
+  display: none;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 5;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  margin: 0;
+  padding: 50px 0;
+  list-style: none;
+  background-color: #d1c8e1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+  z-index: 4;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #87255b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+.menu__item:hover {
+  background-color: #cfd8dc;
+}
+
+.logoneomuse {
+  width: 8rem;
+}
+
+.menu-open {
+  left: 0%;
+  top: 42px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #616161;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2rem;
+    padding-left: 0;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .navbar-brand {
+    display: flex;
+    justify-content: flex-start;
+    order: 1;
+    background-color: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      #d1c8e1;
+  }
+
+  .div-nav-user {
+    display: flex;
+    flex-direction: column;
+    order: 3;
+    text-decoration: none;
+  }
+
+  .div-nav-burger {
+    display: none;
+  }
+
+  .div-nav-not-burger {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+
+  .div-nav-not-burger a {
+    text-decoration: none;
+    color: #87255b;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .logoneomuse {
+    width: 12rem;
+  }
+
+  .div-nav-collections {
+    text-decoration: none;
+  }
+
+  .div-user-compte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .div-nav-user p {
+    display: contents;
+    text-decoration: none;
+    color: #87255b;
+    font-family: "Montserrat", sans-serif;
+  }
+}

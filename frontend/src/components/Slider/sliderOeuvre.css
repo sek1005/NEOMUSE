@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@media screen and (min-width: 1024px) {
+  .containerSlider {
+    width: 90%;
+    margin-left: 8rem;
+  }
+  .containtSlider {
+    width: 90%;
+    margin: 0, auto;
+  }
+  .slick-arrow {
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition:
+      background-color 0.3s,
+      transform 0.3s;
+  }
+  .slick-arrow:hover {
+    background-color: black;
+    transform: scale(1.5);
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .containerSlider {
+    width: 90%;
+    margin-left: 3.5rem;
+  }
+  .containtSlider {
+    width: 85%;
+    margin: 0, auto;
+  }
+  .slick-arrow {
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition:
+      background-color 0.3s,
+      transform 0.3s;
+  }
+  .slick-arrow:hover {
+    background-color: black;
+    transform: scale(1.5);
+  }
+}

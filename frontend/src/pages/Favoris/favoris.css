@@ -1,0 +1,18 @@
+.favorite_title {
+  margin: 2rem;
+  font-weight: bold;
+  border: 2px solid;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .favorite_title {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    margin-left: 35%;
+  }
+}
