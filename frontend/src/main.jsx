@@ -26,6 +26,7 @@ import GetUser from "./pages/Admin/GetUser";
 import Data from "./pages/data/data";
 // eslint-disable-next-line import/no-unresolved
 import Loader from "./components/loader/loader";
+import "./index.css";
 
 function PrivateRoute({ children }) {
   const { user, isLoading } = useUser();

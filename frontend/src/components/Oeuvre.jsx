@@ -4,7 +4,7 @@ import Card from "@mui/joy/Card";
 import Typography from "@mui/joy/Typography";
 import AspectRatio from "@mui/joy/AspectRatio";
 import Box from "@mui/material/Box";
-import Favorite from "@mui/icons-material/Favorite";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Stack from "@mui/joy/Stack";
 import useAllDataContext from "../contexts/AllDataContext";
 import useUser from "../contexts/UserContext";
@@ -94,9 +94,9 @@ function Oeuvre({ artwork, setDeleted = () => {} }) {
       <Card
         sx={{
           margin: "1rem",
-          bgcolor: "#d1c8e1",
+
           border: " 0.1rem solid #605f5d",
-          borderRadius: "0px",
+          borderRadius: "10px",
           boxShadow: "0px 4px 4px #00000040",
           padding: "0.7rem",
           overflow: "hidden",
@@ -186,7 +186,7 @@ function Oeuvre({ artwork, setDeleted = () => {} }) {
                   }
             }
           >
-            <Favorite
+            <FavoriteBorderIcon
               sx={{
                 backgroundColor: "white",
                 fontWeight: "md",

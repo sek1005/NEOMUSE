@@ -320,7 +320,7 @@ const artwork = [
     dimension_width: 15,
     dimension_depth: 3,
     price_on_demand: false,
-    thumbnail: `${imageBaseUrl}/peinture9.jpeg`,
+    thumbnail: `${imageBaseUrl}/peinture9.jpg`,
     artists_id: 2,
     artwork_technique_id: 1,
   },
@@ -400,7 +400,7 @@ const artwork = [
     artwork_technique_id: 2,
   },
   {
-    title: "Voyage en Amérique, le stand de George",
+    title: "Le stand de George",
     description:
       "Une photographie en noir et blanc capturant la façade pittoresque d'un stand de restauration américain, où figure une enseigne vintage pour la boisson coca cola, évoquant l'essence même de l'Amérique rurale et authentique.",
     art_theme: "paysage",

@@ -25,11 +25,9 @@
 }
 .home-title-2,
 .home-title-1 {
-  font-weight: bold;
   font-size: 1.2rem;
   padding-left: 2rem;
   margin-top: 2rem;
-  text-decoration: underline;
 }
 .slide_artist {
   display: flex;
@@ -49,7 +47,6 @@
   }
   .home-title-2,
   .home-title-1 {
-    font-weight: bold;
     font-size: 2rem;
     width: 90%;
   }

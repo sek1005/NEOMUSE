@@ -1,13 +1,14 @@
-.carousel.carousel-slider .control-arrow {
+/* .carousel.carousel-slider .control-arrow {
   opacity: 1;
   z-index: 2;
   top: 40%;
   background: rgba(0, 0, 0, 0.6);
   font-size: 20px;
   bottom: 40%;
-}
+} */
 .containerCarrousel {
   position: relative;
+  top: 2rem;
 }
 .img_event {
   width: 100vw;
@@ -39,8 +40,13 @@
   padding: 3px;
 }
 @media screen and (min-width: 1024px) {
+  .containerCarrousel {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+  }
   .img_event {
-    width: 100%;
+    width: 80%;
     height: 60vh;
     object-fit: cover;
   }

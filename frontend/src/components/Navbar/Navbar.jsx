@@ -1,115 +1,82 @@
-import React, { useState } from "react";
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import { Link } from "react-router-dom";
-import { Icon } from "@iconify/react";
+import React, { useState } from "react";
+import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import useUser from "../../contexts/UserContext";
-import "./navbar.css";
-import logouser from "../../assets/images/userprofil.png";
 import logoneomuse from "../../assets/images/logoneomuse.png";
-
-function MyNavbar() {
+/* eslint-disable camelcase */
+function NavBar() {
   const { user } = useUser();
-  const [isMenuOpen, setMenuOpen] = useState(false);
+  const Links = [
+    { name: "ARTISTES", link: "/artists" },
+    { name: "COLLECTIONS", link: "/artworks" },
+    { name: "A PROPOS", link: "/about" },
+    { name: "CONTACT", link: "/contact" },
+  ];
+  const [open, setOpen] = useState(false);
 
-  const handleMenuClick = () => {
-    setMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
   return (
-    <nav>
-      <div className="hamburger-menu">
-        <label className="menu__btn" htmlFor="menu__toggle">
-          <span />
-          <input
-            id="menu__toggle"
-            type="checkbox"
-            checked={isMenuOpen}
-            onChange={handleMenuClick}
-          />
-        </label>
-        <div
-          className={`menu__box ${isMenuOpen ? "menu-open" : "true"}`}
-          onClick={closeMenu}
-          onKeyDown={closeMenu}
-          tabIndex="0"
-          role="button"
+    <div className="fixed top-0 left-0 z-50 w-full shadow-md">
+      <div className="items-center justify-around py-4 bg-white md:flex md: md:px-10 px-7">
+        {/* logo section */}
+        <div>
+          <a
+            href="/"
+            className="flex items-center gap-1 text-2xl font-bold cursor-pointer"
+          >
+            <img
+              className="w-1/5 h-auto"
+              src={logoneomuse}
+              alt="logo-neomuse"
+            />
+          </a>
+          {/* Menu icon */}
+
+          <div
+            onClick={() => setOpen(!open)}
+            tabIndex={0}
+            role="button"
+            className="absolute cursor-pointer right-8 top-6 md:hidden w-7 h-7"
+          >
+            {open ? <XMarkIcon /> : <Bars3BottomRightIcon />}
+          </div>
+          {/* linke items */}
+        </div>
+        <ul
+          className={`md:flex md:items-center md:pb-0 bg-white pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 md:ml-8  transition-all duration-500 ease-in ${
+            open ? "top-12" : "top-[-490px]"
+          }`}
         >
-          <button type="button" className="close-btn" onClick={closeMenu}>
-            ×
-          </button>
-          <li>
-            <Link to="/artists" className="menu__item">
-              Artistes
-            </Link>
-          </li>
-          <li>
-            <Link to="/artworks" className="menu__item">
-              Collections
-            </Link>
-          </li>
-          <li>
-            <Link to="/about" className="menu__item">
-              A propos
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact" className="menu__item">
-              Contact
-            </Link>
-          </li>
+          {Links.map((link) => (
+            <li className="font-semibold md:ml-8 md:my-0 my-7">
+              <a href={link.link} className="duration-500 hover:text-slate-500">
+                {link.name}
+              </a>
+            </li>
+          ))}
           {!user ? (
             <li>
-              <Link to="/login" className="menu__item">
-                Connexion
+              <Link
+                to="/login"
+                className="px-3 py-1 font-semibold text-white duration-500 bg-pink-800 rounded btn md:ml-8 md:static"
+              >
+                Se connecter
               </Link>
             </li>
           ) : (
             <li>
-              <Link to="/users" className="menu__item">
+              <Link
+                to="/users"
+                className="px-3 py-1 font-semibold text-white duration-500 bg-pink-800 rounded btn md:ml-8 md:static"
+              >
                 Mon compte
               </Link>
             </li>
           )}
-        </div>
+        </ul>
       </div>
-      <Link to="/" className="navbar-brand">
-        <img className="logoneomuse" src={logoneomuse} alt="logo-neomuse" />
-      </Link>
-      <div className="div-nav-not-burger">
-        <Link className="div-nav-artistes" to="/artists">
-          ARTISTES
-        </Link>
-        <Link className="div-nav-collections" to="/artworks">
-          COLLECTIONS
-        </Link>
-        <Link className="div-nav-about" to="/about">
-          A PROPOS
-        </Link>
-        <Link className="div-nav-contact" to="/contact">
-          CONTACT
-        </Link>
-      </div>
-      <div className="div-nav-user">
-        {!user ? (
-          <Link to="/login" className="div-user-compte">
-            <img className="logouser" src={logouser} alt="logouser" />
-            <p>Connexion</p>
-          </Link>
-        ) : (
-          <Link to="/users" className="icon">
-            <Icon
-              icon="mdi:account-check-outline"
-              color="#87255b"
-              width="40"
-              height="40"
-            />
-          </Link>
-        )}
-      </div>
-    </nav>
+    </div>
   );
 }
-
-export default MyNavbar;
+/* eslint-disable camelcase */
+export default NavBar;

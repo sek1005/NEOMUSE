@@ -13,8 +13,6 @@ function ModalSignup({ onClose }) {
   const firstname = useRef();
   const lastname = useRef();
   // const email = useRef();
-  const phone = useRef();
-  const adress = useRef();
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
   };
@@ -36,8 +34,6 @@ function ModalSignup({ onClose }) {
             firstname: firstname.current.value,
             lastname: lastname.current.value,
             email,
-            phone: phone.current.value,
-            adress: adress.current.value,
             password,
           }),
         }
@@ -82,30 +78,7 @@ function ModalSignup({ onClose }) {
               required
             />
           </div>
-          <div>
-            <label htmlFor="phone" className="titre_champ">
-              Phone
-            </label>
-            <input
-              type="text"
-              name="phone"
-              ref={phone}
-              className="input_login"
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="adress" className="titre_champ">
-              Adresse
-            </label>
-            <input
-              type="text"
-              name="adress"
-              ref={adress}
-              className="input_login"
-              required
-            />
-          </div>
+
           <div>
             <label htmlFor="email" className="titre_champ">
               Email
@@ -120,7 +93,7 @@ function ModalSignup({ onClose }) {
               onBlur={validateEmail}
               required
             />
-            {!isValid && <p style={{ color: "red" }}>Invalid email address</p>}
+            {!isValid && <p style={{ color: "red" }}>addresse invalide</p>}
           </div>
           <div>
             <label htmlFor="password" className="titre_champ">
@@ -182,7 +155,7 @@ function ModalSignup({ onClose }) {
             {password === confirmPassword ? (
               <Icon icon="charm:square-tick" color="#87255B" width="20" />
             ) : (
-              <p style={{ color: "red" }}>Mot de passe non identique</p>
+              <p style={{ color: "red" }}>Mot de passe différent</p>
             )}
           </div>
         </div>

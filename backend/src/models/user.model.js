@@ -4,12 +4,12 @@ const findAll = () => {
   return db.query("SELECT * FROM users");
 };
 const insert = (user) => {
-  const { firstname, lastname, email, phone, adress, password } = user;
+  const { firstname, lastname, email, password } = user;
   console.info(user);
 
   return db.query(
-    "INSERT INTO users (firstname, lastname, email, phone, adress, password) VALUES (?, ?, ?, ?, ?, ?)",
-    [firstname, lastname, email, phone, adress, password]
+    "INSERT INTO users (firstname, lastname, email, password) VALUES (?, ?, ?, ?)",
+    [firstname, lastname, email, password]
   );
 };
 
