@@ -8,10 +8,10 @@ import logoneomuse from "../../assets/images/logoneomuse.png";
 function NavBar() {
   const { user } = useUser();
   const Links = [
-    { name: "ARTISTES", link: "/artists" },
-    { name: "COLLECTIONS", link: "/artworks" },
-    { name: "A PROPOS", link: "/about" },
-    { name: "CONTACT", link: "/contact" },
+    { name: "Les Artistes", link: "/artists" },
+    { name: "Les Oeuvres", link: "/artworks" },
+    { name: "La Gallerie", link: "/about" },
+    { name: "Contact", link: "/contact" },
   ];
   const [open, setOpen] = useState(false);
 

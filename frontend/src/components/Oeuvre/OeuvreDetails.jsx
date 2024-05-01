@@ -154,10 +154,7 @@ function Artwork({ setDeleted }) {
             <div className="enTeteOeuvreDetais">
               <div className="titreOeuvre">
                 <p>{artwork.artworkUnique?.title}</p>
-                <Link
-                  className="nom_Artist"
-                  to={`/artists/${artwork.artworkUnique?.artists_id}`}
-                >
+                <Link to={`/artists/${artwork.artworkUnique?.artists_id}`}>
                   <p>
                     {" "}
                     by {artwork.artworkUnique?.lastname}{" "}
@@ -227,8 +224,7 @@ function Artwork({ setDeleted }) {
         </div>
       )}
       <h1 className="Titreslid">
-        Autres oeuvres de la même technique{" "}
-        {artwork.artworkUnique?.technique_name}{" "}
+        DECOUVREZ LES AUTRES {artwork.artworkUnique?.technique_name}{" "}
       </h1>
       <div className="gridcontainer">
         <Grid

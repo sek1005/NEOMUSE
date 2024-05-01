@@ -57,6 +57,7 @@
 }
 .art-title {
   margin-bottom: 1rem;
+
   text-align: center;
   font-weight: 900;
   line-height: 0.9rem;
@@ -105,6 +106,7 @@
   .art-bio-container {
     display: flex;
     flex-direction: row-reverse;
+    margin-bottom: 10rem;
   }
   .art-display {
     width: 50%;

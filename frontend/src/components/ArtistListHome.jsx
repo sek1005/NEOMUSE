@@ -1,38 +1,40 @@
-import Box from "@mui/material/Box";
-import { Link /* useParams */ } from "react-router-dom";
-/* import { useState, useEffect } from "react"; */
+import Card from "@mui/joy/Card";
+import Typography from "@mui/joy/Typography";
+import CardContent from "@mui/joy/CardContent";
+import CardCover from "@mui/joy/CardCover";
 
 function ArtistlistHome({ artist }) {
   return (
-    <div className="body_artistlist">
-      <Link to={`/artists/${artist.artist_id}`}>
-        <Box
-          className="box"
-          sx={{
-            border: "1px solid white",
-            width: "100%",
-            height: "100%",
-            margin: "0 auto",
-            overflow: "hidden",
-            "&:hover": { opacity: "0.8", cursor: "pointer" },
-            "@media screen and (min-width: 1024px)": {
-              width: "80%",
-            },
-          }}
-        >
+    <section>
+      <Card
+        sx={{
+          minHeight: "300px",
+          width: 280,
+          margin: "1rem",
+          padding: "0.7rem",
+          cursor: "pointer",
+          "&:hover": {
+            boxShadow: "md",
+            transition: "transform 0.3s ease-in-out",
+            transform: "scale(1.1)",
+          },
+        }}
+      >
+        <CardCover>
           <img
             src={artist?.thumbnail}
             srcSet={artist?.thumbnail}
             loading="lazy"
             alt=""
-            style={{
-              width: "100%",
-              height: "100%",
-            }}
           />
-        </Box>
-      </Link>
-    </div>
+        </CardCover>
+        <CardContent sx={{ justifyContent: "flex-end" }}>
+          <Typography level="title-lg" textColor="#fff">
+            {artist?.firstname}
+          </Typography>
+        </CardContent>
+      </Card>
+    </section>
   );
 }
 

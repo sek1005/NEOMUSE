@@ -42,7 +42,7 @@ function Artist() {
         className="art-imgtop-desk"
       />
       <div className="art-imgtop" alt="tof-random" />
-      <h3 className="art-name">Artiste : {artists?.artist_name}</h3>
+      <h3 className="art-name">ARTISTE : {artists?.artist_name}</h3>
       <div className="art-bio-container">
         <img
           src={artists?.thumbnail}
@@ -62,7 +62,7 @@ function Artist() {
           </button>
         </p>
       </div>
-      <h3 className="art-title">Oeuvres de l'artiste</h3>
+      <h3 className="art-title">AUTRES OEUVRES DE L'ARTISTE</h3>
       <SliderOeuvre artworks={artworks} />
     </>
   );

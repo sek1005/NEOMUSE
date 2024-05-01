@@ -36,7 +36,8 @@ function Contact() {
             <p>@neo_muse_gallery</p>
           </div>
           <div className="hours">
-            <p>mardi - samedi, 10h-18h</p>
+            <p>Lundi au vendredi : 10h - 17h</p>
+            <p>Samedi: 10h - 14h</p>
           </div>
         </div>
       </div>

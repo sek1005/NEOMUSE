@@ -94,7 +94,6 @@ function Oeuvre({ artwork, setDeleted = () => {} }) {
       <Card
         sx={{
           margin: "1rem",
-
           border: " 0.1rem solid #605f5d",
           borderRadius: "10px",
           boxShadow: "0px 4px 4px #00000040",
