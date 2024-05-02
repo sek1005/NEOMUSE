@@ -58,7 +58,7 @@ function NavBar() {
             <li>
               <Link
                 to="/login"
-                className="px-3 py-1 font-semibold text-white duration-500 bg-pink-800 rounded btn md:ml-8 md:static"
+                className="px-3 py-1 font-semibold text-white duration-500 bg-pink-900 hover:text-pink-800 hover:bg-white rounded btn md:ml-8 md:static"
               >
                 Se connecter
               </Link>

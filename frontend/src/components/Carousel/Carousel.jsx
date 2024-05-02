@@ -41,6 +41,7 @@ function Slider() {
           autoPlay
           interval={5000}
           infiniteLoop
+          radius="10rem"
           showThumbs={false}
           showStatus={false}
           transitionTime={2000}

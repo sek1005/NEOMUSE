@@ -76,7 +76,9 @@
   font-size: 1rem;
   cursor: pointer;
   &:hover {
-    background-color: #350620;
+    color: #87255b;
+    background-color: white;
+    border: 1px solid #87255b;
   }
 }
 .bout_signup {

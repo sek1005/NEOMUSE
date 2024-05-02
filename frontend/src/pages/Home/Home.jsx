@@ -4,6 +4,7 @@ import "./home.css";
 import useAllDataContext from "../../contexts/AllDataContext";
 import SliderArtist from "../../components/Slider/SliderArtist";
 import SliderOeuvre from "../../components/Slider/SliderOeuvre";
+import Banniere from "../../components/Banniere";
 
 function Home() {
   const navigate = useNavigate();
@@ -34,6 +35,7 @@ function Home() {
         </button>
       </div>
       <SliderOeuvre artworks={artworks} />
+      <Banniere />
     </div>
   );
 }

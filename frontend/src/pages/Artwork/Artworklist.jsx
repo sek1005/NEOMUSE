@@ -6,7 +6,7 @@ function Artworklist() {
     <section className="artWorkList">
       <div className="list">
         <div className="h1listartwork">
-          <h1 className="h1Oeuvres">Découvrir nos oeuvres</h1>
+          <h1 className="h1_artistes">Découvrir nos oeuvres</h1>
         </div>
         <TechniqueList />
       </div>
